@@ -1,12 +1,15 @@
+import java.io.File;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.io.File;
+import java.io.IOException;
 
 public class TimeAndTimeAgain
 	{
-		public static void main(String[] args)
+		public static void main(String[] args) throws IOException
 			{
-			Scanner input = new Scanner(System.in);
+			Scanner input = new Scanner(new File("TimeAndTimeAgainTextfile.txt"));
 			int numberOfCases = input.nextInt();
 			for (int i = 0; i < numberOfCases; i++)
 				{
@@ -30,9 +33,8 @@ public class TimeAndTimeAgain
 				if (matcher3.matches())
 					hour = Integer.parseInt(matcher3.group(1));
 				
-				System.out.println(hour + ":" + minute + ":" + second + ":");
+				System.out.println(hour + ":" + minute + ":" + second);
 				}
 
 			}
-
 	}
