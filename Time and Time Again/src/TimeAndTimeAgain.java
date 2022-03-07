@@ -18,17 +18,17 @@ public class TimeAndTimeAgain
 				int second = 0;
 				String data = input.nextLine();
 				
-				Pattern secondRegex = Pattern.compile(".*(//d+)s.*");
+				Pattern secondRegex = Pattern.compile(".*(\\d+)s.*");
 				Matcher matcher1 = secondRegex.matcher(data);
 				if (matcher1.matches())
 					second = Integer.parseInt(matcher1.group(1));
 				
-				Pattern minuteRegex = Pattern.compile(".*(//d+)m.*");
+				Pattern minuteRegex = Pattern.compile(".*(\\d+)m.*");
 				Matcher matcher2 = minuteRegex.matcher(data);
 				if (matcher2.matches())
 					minute = Integer.parseInt(matcher2.group(1));
 				
-				Pattern hourRegex = Pattern.compile(".*(//d+)h.*");
+				Pattern hourRegex = Pattern.compile(".*(\\d+)h.*");
 				Matcher matcher3 = hourRegex.matcher(data);
 				if (matcher3.matches())
 					hour = Integer.parseInt(matcher3.group(1));
