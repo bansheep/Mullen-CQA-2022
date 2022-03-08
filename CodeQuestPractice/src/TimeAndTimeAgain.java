@@ -5,8 +5,8 @@ public class TimeAndTimeAgain {
     private static Scanner s = new Scanner(System.in);
     public static void main(String args[]) {
     	
-    	parseInput_NoRegex();
-//    	parseInput_WithRegex();
+//    	parseInput_NoRegex();
+    	parseInput_WithRegex();
       
     }
     
@@ -19,7 +19,7 @@ public class TimeAndTimeAgain {
     	Pattern minutesRegex = Pattern.compile("(\\d+)m");
     	Pattern secondsRegex = Pattern.compile("(\\d+)s");
     	
-    	System.out.println();
+//    	System.out.println();
     	for (int i = 0; i < numberOfIterations; i ++) {
 	    	String[] time = new String[] {"","",""};
     		String input = s.nextLine();
